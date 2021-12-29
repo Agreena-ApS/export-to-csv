@@ -160,7 +160,11 @@ export class ExportToCsv {
                 const key = keys[keyPos];
                 const cellData = this._data[i][key];
 
-                if (cellData === undefined) {
+                console.log({
+                  cellData,
+                });
+
+                if (!cellData) {
                     return;
                 }
 
