@@ -158,7 +158,13 @@ export class ExportToCsv {
             let row = "";
             for (let keyPos = 0; keyPos < keys.length; keyPos++) {
                 const key = keys[keyPos];
-                row += this._formatData(this._data[i][key]) + this._options.fieldSeparator;
+                const cellData = this._data[i][key];
+
+                if (cellData === undefined) {
+                    return;
+                }
+
+                row += this._formatData(cellData) + this._options.fieldSeparator;
             }
 
             row = row.slice(0, -1);
@@ -170,10 +176,6 @@ export class ExportToCsv {
      * @param {any} data
      */
     private _formatData(data: any) {
-        if (data === undefined) {
-            return "";
-        }
-
         if (this._options.decimalSeparator === 'locale' && this._isFloat(data)) {
             return data.toLocaleString();
         }
