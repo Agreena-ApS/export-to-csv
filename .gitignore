@@ -13,3 +13,4 @@ Thumbs.db
 test/
 coverage/
 build/
+yarn.lock
