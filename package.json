@@ -9,7 +9,8 @@
     "scripts": {
         "dev": "tsc --watch",
         "test": "tsc && karma start",
-        "prepublishOnly": "tsc"
+        "prepublishOnly": "tsc",
+        "build": "tsc -p"
     },
     "keywords": [
         "export-to-csv",
