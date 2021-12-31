@@ -10,7 +10,7 @@
         "dev": "tsc --watch",
         "test": "tsc && karma start",
         "prepublishOnly": "tsc",
-        "postinstall": "tsc -p ."
+        "postinstall": "tsc"
     },
     "keywords": [
         "export-to-csv",
