@@ -155,19 +155,11 @@ export class ExportToCsv {
     private _getBody() {
         const keys = Object.keys(this._data[0]);
 
-        console.log({
-            data: this._data,
-          });
-          
         for (var i = 0; i < this._data.length; i++) {
             let row = "";
             for (let keyPos = 0; keyPos < keys.length; keyPos++) {
                 const key = keys[keyPos];
                 const cellData = this._data[i][key];
-
-                console.log({
-                  cellData,
-                });
 
                 if (!cellData) {
                     continue;
