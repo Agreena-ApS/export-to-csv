@@ -10,8 +10,8 @@
         "dev": "tsc --watch",
         "test": "tsc && karma start",
         "prepublishOnly": "tsc",
-        "build": "tsc",
-        "postinstall": "yarn build"
+        "zzz": "tsc",
+        "postinstall": "npm run zzz"
     },
     "keywords": [
         "export-to-csv",
