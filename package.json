@@ -34,6 +34,7 @@
         "url": "https://github.com/alexcaza/export-to-csv/issues"
     },
     "main": "./build/index.js",
+    "types": "./build/export-to-csv.d.ts",
     "homepage": "https://github.com/alexcaza/export-to-csv#readme",
     "devDependencies": {
         "@types/jasmine": "^2.5.46",
