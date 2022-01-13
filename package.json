@@ -36,15 +36,8 @@
     "main": "./build/index.js",
     "homepage": "https://github.com/alexcaza/export-to-csv#readme",
     "devDependencies": {
-        "@types/jasmine": "^2.5.46",
         "es6-shim": "^0.35.3",
         "jasmine-core": "^2.4.1",
-        "karma": "^1.5.0",
-        "karma-chrome-launcher": "^2.0.0",
-        "karma-jasmine": "^1.0.2",
-        "karma-phantomjs-launcher": "^1.0.4",
-        "karma-sourcemap-loader": "^0.3.7",
-        "karma-typescript": "^3.0.8",
         "tsc": "^2.0.3",
         "typescript": "4.3.4"
     }
