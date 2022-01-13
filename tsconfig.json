@@ -20,6 +20,9 @@
         "export-to-csv.ts",
         "index.ts"
     ],
+    "include": [
+        "./*.ts",
+      ],
     "exclude": [
         "node_modules"
     ]
