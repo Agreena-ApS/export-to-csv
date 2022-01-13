@@ -154,6 +154,11 @@ export class ExportToCsv {
      */
     private _getBody() {
         const keys = Object.keys(this._data[0]);
+
+        console.log({
+            data: this._data,
+          });
+          
         for (var i = 0; i < this._data.length; i++) {
             let row = "";
             for (let keyPos = 0; keyPos < keys.length; keyPos++) {
@@ -165,7 +170,7 @@ export class ExportToCsv {
                 });
 
                 if (!cellData) {
-                    return;
+                    continue;
                 }
 
                 row += this._formatData(cellData) + this._options.fieldSeparator;
