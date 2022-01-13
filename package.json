@@ -11,7 +11,7 @@
         "test": "tsc && karma start",
         "prepublishOnly": "tsc",
         "build": "tsc",
-        "postinstall": "npm run build"
+        "postinstall": "yarn build"
     },
     "keywords": [
         "export-to-csv",
