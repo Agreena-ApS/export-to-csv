@@ -10,7 +10,7 @@
         "dev": "tsc --watch",
         "test": "tsc && karma start",
         "prepublishOnly": "tsc",
-        "postinstall": "yarn install && tsc"
+        "postinstall": "tsc"
     },
     "keywords": [
         "export-to-csv",
@@ -36,7 +36,6 @@
     "types": "./build/export-to-csv.d.ts",
     "homepage": "https://github.com/alexcaza/export-to-csv#readme",
     "devDependencies": {
-        "@types/jasmine": "^2.5.46",
         "es6-shim": "^0.35.3",
         "jasmine-core": "^2.4.1",
         "karma": "^1.5.0",
@@ -46,6 +45,6 @@
         "karma-sourcemap-loader": "^0.3.7",
         "karma-typescript": "^3.0.8",
         "tsc": "^2.0.3",
-        "typescript": "~2.4.0"
+        "typescript": "4.3.4"
     }
 }
