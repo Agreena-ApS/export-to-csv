@@ -38,6 +38,7 @@
     "homepage": "https://github.com/alexcaza/export-to-csv#readme",
     "devDependencies": {
         "es6-shim": "^0.35.3",
+        "@types/jasmine": "^2.5.46",
         "jasmine-core": "^2.4.1",
         "karma": "^1.5.0",
         "karma-chrome-launcher": "^2.0.0",
