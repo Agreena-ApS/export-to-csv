@@ -162,7 +162,7 @@ export class ExportToCsv {
                 const cellData = this._data[i][key];
 
                 if (!cellData) {
-                    continue;
+                  continue;
                 }
 
                 row += this._formatData(cellData) + this._options.fieldSeparator;
@@ -177,6 +177,7 @@ export class ExportToCsv {
      * @param {any} data
      */
     private _formatData(data: any) {
+
         if (this._options.decimalSeparator === 'locale' && this._isFloat(data)) {
             return data.toLocaleString();
         }
@@ -196,7 +197,6 @@ export class ExportToCsv {
         if (typeof data === 'boolean') {
             return data ? 'TRUE' : 'FALSE';
         }
-        
         return data;
     }
     /**
