@@ -156,12 +156,12 @@ export class ExportToCsv {
         for (var i = 0; i < this._data.length; i++) {
             const keys = Object.keys(this._data[i]);
             let row = "";
-            
+
             for (let keyPos = 0; keyPos < keys.length; keyPos++) {
                 const key = keys[keyPos];
                 const cellData = this._data[i][key];
 
-                if (!cellData) {
+                if (cellData !== "" && !cellData) {
                   continue;
                 }
 
