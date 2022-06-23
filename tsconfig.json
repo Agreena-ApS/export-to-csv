@@ -14,11 +14,11 @@
             "es5"
         ],
         "moduleResolution": "node",
-        "outDir": "./build"
+        "outDir": "./build",
+        "types": []
     },
     "files": [
         "export-to-csv.ts",
-        "export-to-csv.spec.ts",
         "index.ts"
     ],
     "exclude": [
